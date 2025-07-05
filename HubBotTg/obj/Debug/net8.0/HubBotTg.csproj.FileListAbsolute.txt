@@ -1,0 +1,5 @@
+/home/nik/vs/tgBotV2/HubBotTg/obj/Debug/net8.0/HubBotTg.GeneratedMSBuildEditorConfig.editorconfig
+/home/nik/vs/tgBotV2/HubBotTg/obj/Debug/net8.0/HubBotTg.AssemblyInfoInputs.cache
+/home/nik/vs/tgBotV2/HubBotTg/obj/Debug/net8.0/HubBotTg.AssemblyInfo.cs
+/home/nik/vs/tgBotV2/HubBotTg/obj/Debug/net8.0/HubBotTg.csproj.CoreCompileInputs.cache
+/home/nik/vs/tgBotV2/HubBotTg/obj/Debug/net8.0/HubBotTg.sourcelink.json

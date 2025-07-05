@@ -14,7 +14,8 @@ namespace HubBotTg.Core.Models
         public static string AddAdminButton() => "add_admin_button";
         public static string BackButton() => "back_button";
         public static string ApprovePostButton() => "approove_post_button";
-        public static string StudentApprove() => "student_button";
+        public static string StudentGroup() => "student_group_button";
+        public static string AdminGroup() => "admin_group_button";
 
     }
 }
