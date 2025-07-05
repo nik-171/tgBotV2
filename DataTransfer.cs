@@ -1,6 +1,6 @@
 public class DataTransfer
 {
-    Message Message { get; set; }
+    public Message Message { get; set; }
     public State State { get; set; }
     public object Object { get; set; }
 
