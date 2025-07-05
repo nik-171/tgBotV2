@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HubBotTg")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2219c1d940bbdef3978b2e67172e6df97be8616")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+403e199531f6a87e6adec7b7c5b711752a78f92c")]
 [assembly: System.Reflection.AssemblyProductAttribute("HubBotTg")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HubBotTg")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
