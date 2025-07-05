@@ -1,13 +1,13 @@
 public class UserStateData
 {
-    public Message Message {get; set; }
+    public SendableMessageDesign Message {get; set; }
     public State State { get; set; }
-    public object Object { get; set; }
+    public object? Object { get; set; }
 
-    public UserStateData(State state, object obj, Message message)
+    public UserStateData(State state, object? obj, SendableMessageDesign message)
     {
         State = state;
-        Object = obj;
+        Object? = obj;
         Message = message;
     }
 }
