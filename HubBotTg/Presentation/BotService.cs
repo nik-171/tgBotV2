@@ -8,5 +8,9 @@ namespace HubBotTg.Presentation
 {
     internal class BotService
     {
+        public void UserHandler()
+        {
+            
+        }
     }
 }
