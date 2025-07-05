@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HubBotTg.Core.Constants
+public enum State
 {
-    internal class States
-    {
-    }
+    StateStart,
+    StatePostCreating,
+    StatePostConfirming,
+    StateGroupChosingForPostSanding
 }
