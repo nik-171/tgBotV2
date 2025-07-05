@@ -1,13 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
-public class Group
+namespace HubBotTg.Core.Models
 {
-    [Key]
-    public int Id { get; set; }
+    public class Group
+    {
+        [Key]
+        public int Id { get; set; }
 
-    [Required]
-    public string Name { get; set; } = null!;
+        [Required]
+        public string Name { get; set; } = null!;
 
-    public ICollection<User> Users { get; set; } = new List<User>();
+        public ICollection<User> Users { get; set; } = new List<User>();
+    }
 }

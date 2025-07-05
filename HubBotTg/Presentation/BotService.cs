@@ -8,9 +8,19 @@ namespace HubBotTg.Presentation
 {
     internal class BotService
     {
-        public void UserHandler()
+        public async Task HandleUpdateAsync()
         {
-            
+            if (update.Type == UpdateType.CallbackQuery)
+            {
+                var callbackQuery = update.CallbackQuery;
+
+                if (callbackQuery.Data == "student_button_clicked")
+                {
+                    await botClient.AnswerCallbackQueryAsync(callbackQuery.Id);
+
+                }
+            }
+
         }
     }
 }

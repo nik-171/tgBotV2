@@ -67,9 +67,7 @@ public class UserRepository : IUserRepository
         }
         else
         {
-            existing.FirstName = user.FirstName;
-            existing.LastName = user.LastName;
-            existing.PhoneNumber = user.PhoneNumber;
+            existing.UserId = user.UserId;
             existing.IsAdmin = user.IsAdmin;
             existing.AdminRoleRequest = user.AdminRoleRequest;
             existing.GroupId = user.GroupId;
