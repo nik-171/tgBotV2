@@ -64,7 +64,7 @@ namespace HubBotTg.Core.Design
                     design.Keyboard.AddButton(col, $"student-group-select_{col}");
             }
 
-            design.Keyboard.AddNewRow().AddButton("Я ошибся Т_Т - я преподаватель", "i-not-student");
+            design.Keyboard.AddNewRow().AddButton("Я ошибся Т_Т - я преподаватель", "back_button");
 
             return design;
         }
@@ -90,7 +90,7 @@ namespace HubBotTg.Core.Design
             {
                 Text = $"Хорошо. Ожидайте подтверждения.",
                 Keyboard = new InlineKeyboardMarkup()
-                           .AddNewRow().AddButton("Я ошибся Т_Т - я студент", "i-not-teacher")
+                           .AddNewRow().AddButton("Я ошибся Т_Т - я студент", "back_button")
             };
 
         /// <summary>
@@ -128,7 +128,7 @@ namespace HubBotTg.Core.Design
             => new SendableMessageDesign()
             {
                 Text = $"Составь сообщение для рассылки.",
-                Keyboard = new InlineKeyboardMarkup().AddNewRow().AddButton("Назад", "admin-menu")
+                Keyboard = new InlineKeyboardMarkup().AddNewRow().AddButton("Назад", "back_button")
             };
 
         /// <summary>
@@ -139,7 +139,7 @@ namespace HubBotTg.Core.Design
             => new SendableMessageDesign()
             {
                 Text = $"Проверь, все ли окей.",
-                Keyboard = new InlineKeyboardMarkup().AddNewRow().AddButton("Назад", "admin-menu")
+                Keyboard = new InlineKeyboardMarkup().AddNewRow().AddButton("Назад", "back_button")
             };
 
         /// <summary>
@@ -171,7 +171,7 @@ namespace HubBotTg.Core.Design
             }
 
             design.Keyboard.AddNewRow().AddButton("Разослать всем", "broadcast-group-select-all")
-                           .AddNewRow().AddButton("Назад", "admin-menu");
+                           .AddNewRow().AddButton("Назад", "back_button");
 
             return design;
         }
@@ -203,11 +203,11 @@ namespace HubBotTg.Core.Design
 
             foreach (var request in requests)
             {
-                design.Keyboard.AddNewRow().AddButton($"{request.FirstName} {request.LastName ?? ""}", $"admin-request-appeoved_{request.TelegramId}");
+                design.Keyboard.AddNewRow().AddButton($"{request.UserId}", $"admin-request-approved_{request.Id}");
             }
 
 
-            design.Keyboard.AddNewRow().AddButton("Назад", "admin-menu");
+            design.Keyboard.AddNewRow().AddButton("Назад", "back_button");
 
             return design;
         }
@@ -220,7 +220,7 @@ namespace HubBotTg.Core.Design
         public static SendableMessageDesign GetAdminRequestApprovedMessage(User approvedUser)
             => new SendableMessageDesign()
             {
-                Text = $"Пользователь {approvedUser.FirstName}{(approvedUser.LastName == null ? "" : $" { approvedUser.LastName }")} назначен преподавателем!",
+                Text = $"Пользователь {approvedUser.UserId} назначен преподавателем!",
                 Keyboard = new InlineKeyboardMarkup()
                            .AddNewRow().AddButton("Список запросов на преподавателя", "admin-request")
                            .AddNewRow().AddButton("Создать рассылку", "create-broadcast")
