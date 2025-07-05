@@ -7,7 +7,7 @@ public class UserStateData
     public UserStateData(State state, object? obj, SendableMessageDesign message)
     {
         State = state;
-        Object? = obj;
+        Object = obj;
         Message = message;
     }
 }
